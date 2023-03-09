@@ -1,0 +1,124 @@
+@media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+}
+
+@media (min-width: 100px) and (max-width: $screen-phone-small) {
+}
+@media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+}
+@media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) {
+}
+@media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) and (orientation: landscape) {
+}
+@media (min-width: $screen-desktop) {
+}
+
+.navigation {
+  &__container {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    &-row {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+    }
+  }
+
+  &__label {
+    font-family: $third-font-family;
+    color: $color-teal-3;
+    font-size: 1.3rem;
+    width: 10vw;
+    margin-left: 1vw;
+
+    @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+      font-size: 0.8rem;
+      width: 10rem;
+      margin-left: 0.5rem;
+    }
+    @media (min-width: 100px) and (max-width: $screen-phone-small) {
+      font-size: 0.8rem;
+      width: 10rem;
+      margin-left: 0.4rem;
+    }
+    @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+      font-size: 1.1rem;
+      width: 12rem;
+      margin-left: 0.4rem;
+    }
+    @media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) {
+      font-size: 1.1rem;
+      width: 12rem;
+      margin-left: 0.4rem;
+    }
+  }
+
+  &__menu {
+    &-container {
+      width: 3rem;
+      height: 3rem;
+      flex-direction: row;
+      display: flex;
+      justify-content: space-between;
+    }
+    &-icon {
+      width: 2.6rem;
+      height: 2.6rem;
+
+      margin-left: 3rem;
+
+      @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+        width: 2rem;
+        height: 2rem;
+        margin-left: 2.3rem;
+      }
+      @media (min-width: 100px) and (max-width: $screen-phone-small) {
+        width: 1.8rem;
+        height: 1.8rem;
+        margin-left: 2.3rem;
+      }
+    }
+    &-icon:hover {
+      scale: 1.05;
+    }
+  }
+
+  &__logo {
+    font-family: $third-font-family;
+    font-size: 3.5rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    animation: bounceInTop 1.1s both;
+    @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+      font-size: 2.5rem;
+      margin-top: 2rem;
+    }
+    @media (min-width: 100px) and (max-width: $screen-phone-small) {
+      font-size: 2.2rem;
+      margin-top: 2rem;
+      margin-left: 0.8rem;
+    }
+  }
+
+  &__utility {
+    &-profile {
+      width: 3.5rem;
+      height: 3.5rem;
+      position: absolute;
+      display: right;
+      right: 15vw;
+      top: 5vh;
+    }
+    &-photo {
+      border-radius: 50px;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.25);
+    }
+    &-name {
+      font-family: $third-font-family;
+      font-size: 1.3rem;
+    }
+    &-photo:hover {
+      scale: 1.05;
+    }
+  }
+}

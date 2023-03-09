@@ -1,0 +1,28 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin respond-phone {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
+@mixin respond-tablet {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
+@mixin respond-tablet2 {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+@mixin respond-phone {
+  @media (max-width: 600px) {
+    @content;
+  }
+}

@@ -1,0 +1,63 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+@import "base/animations";
+@import "base/base";
+
+@import "layout/grid";
+
+@import "@fontsource/fredoka-one";
+@import "@fontsource/jost";
+@import "@fontsource/quicksand";
+
+@import "../layout/footer/scss/footer.scss";
+
+@import "../pages/teacher/MenageClasses/Schedual/AddClass/scss/AddClass";
+@import "../pages/teacher/MenageClasses//Schedual/defualt/scss/Schedual";
+
+@import "../pages/teacher/MenageClasses/Grades/default/scss/ClassGrades.scss";
+@import "../pages/teacher/MenageClasses/Grades/addGrades/scss/AddGradeForm.scss";
+
+@import "../pages/teacher/MenageClasses/Attendance/details/scss/AttendanceDetails.scss";
+@import "../pages/teacher/MenageClasses/Attendance/addAttendance/scss/AddAttendance";
+@import "../pages/teacher/MenageClasses/Attendance/default/scss/ClassAttendance.scss";
+
+@import "../pages/teacher/MenageClasses/Calendar/AddCalendar/scss/AddCalendarEvent.scss";
+@import "../pages/teacher/MenageClasses/Calendar/default/scss/ClassCalendar.scss";
+@import "../pages/teacher/MenageClasses/Calendar/details/scss/CalendarEvent.scss";
+
+@import "../pages/teacher/MenageClasses/Homework/addHomework/scss/AddHomework.scss";
+@import "../pages/teacher/MenageClasses/Homework/default/scss/Homework";
+@import "../pages/teacher/MenageClasses/Homework/details/scss/HomeworkDetails";
+
+@import "../pages/teacher/MenageClasses/default/scss/MenageClasses";
+
+@import "../pages/teacher/schedual/scss/schedule";
+@import "../pages/teacher/account/scss/account.scss";
+@import "../pages/teacher/addUser/scss/AddUser.scss";
+@import "../pages/teacher/users/scss/Users.scss";
+@import "../pages/teacher/dashboard/scss/Dashboard.scss";
+
+@import "../components/menuDrawer/scss/MenuDrawer.scss";
+@import "../layout/NavBar/scss/Navbar";
+
+@import "../layout/homePage/NewsFeed/scss/NewsFeed";
+@import "../layout/homePage/ClosestEvent/scss/ClosestEvents";
+@import "../layout/homePage/LuckyNumber/scss/LuckyNumberModal";
+
+@import "../components/utility/input/scss/input.scss";
+
+@import "../pages/teacher/dashboard/scss/CurrentSchedual.scss";
+
+@import "../pages/homepage/WelcomePage/scss/welcomePage.scss";
+@import "../pages/homepage/LoginStudent/scss/loginStudent.scss";
+@import "../pages/homepage/LoginTeacher/scss/loginTeacher.scss";
+
+@import "../pages/student/attendance/scss/Attendance";
+@import "../pages/student/homework/default/scss/homework";
+@import "../pages/student/grades/scss/grades";
+@import "../pages/student/calendar/default/scss/Calendar";
+@import "../pages/student/grades/scss/ClassGrades.scss";
+@import "../components/grades/scss/SingleGrade.scss";
+
+@import "../pages/homepage/404/scss/page404.scss";

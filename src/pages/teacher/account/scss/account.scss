@@ -1,0 +1,211 @@
+@media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+}
+
+@media (min-width: 100px) and (max-width: $screen-phone-small) {
+}
+@media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+}
+@media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) {
+}
+@media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) and (orientation: landscape) {
+}
+@media (min-width: $screen-desktop) {
+}
+
+.Account {
+  margin-top: 7vh;
+  margin-right: 5vw;
+  margin-left: 5vw;
+  font-family: $third-font-family;
+  height: 100vh;
+
+  &__link {
+    text-decoration: none;
+    color: black;
+  }
+  &__link:hover,
+  &__link:active {
+    text-decoration: none;
+    color: black;
+    scale: 1.04;
+  }
+
+  &__settings {
+    background-color: $color-gray-light-1;
+    border-radius: 15px;
+    height: 45vh;
+
+    width: 40vw;
+    margin-left: 5vw;
+    margin-top: 8vh;
+    padding: 6vh 5vw;
+
+    @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+      width: 20rem;
+      margin-left: 1rem;
+    }
+    @media (min-width: 100px) and (max-width: $screen-phone-small) {
+      width: 18rem;
+      margin-left: 1rem;
+    }
+    @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+      width: 22rem;
+      margin-left: 1rem;
+    }
+
+    &-email {
+      font-size: 1.4rem;
+      margin-bottom: 4vh;
+      @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+        font-size: 1.1rem;
+      }
+      @media (min-width: 100px) and (max-width: $screen-phone-small) {
+        font-size: 1.1rem;
+      }
+    }
+    &-password {
+      font-size: 1.4rem;
+      margin-bottom: 4vh;
+      @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+        font-size: 1.1rem;
+      }
+      @media (min-width: 100px) and (max-width: $screen-phone-small) {
+        font-size: 1.1rem;
+      }
+    }
+    &-input {
+      background-color: transparent;
+      border: none;
+      margin-left: 1vw;
+      font-family: $third-font-family;
+      font-size: 1.8rem;
+      width: 40vw;
+
+      @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+        width: 18rem;
+        font-size: 1.6rem;
+        display: flex;
+      }
+      @media (min-width: 100px) and (max-width: $screen-phone-small) {
+        width: 18rem;
+        font-size: 1.6rem;
+        display: flex;
+      }
+    }
+    &-mode {
+      font-size: 1.4rem;
+      margin-right: 1vw;
+      margin-bottom: 4vh;
+    }
+    &-language {
+      font-size: 1.4rem;
+      margin-right: 1vw;
+    }
+    &-select {
+      background-color: $color-gray-light-2;
+      padding: 1vh 1vw;
+      border-radius: 10px;
+      border: none;
+      width: 15vw;
+      font-size: 1.4rem;
+      outline: none;
+    }
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &-username {
+      font-size: 3.5rem;
+      margin-left: 1vw;
+
+      @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+        font-size: 1.4rem;
+      }
+      @media (min-width: 100px) and (max-width: $screen-phone-small) {
+        font-size: 1.4rem;
+      }
+      @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+        font-size: 2.3rem;
+      }
+    }
+  }
+
+  &__btn {
+    &-logOut {
+      background-color: $color-red-1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 6.5vh;
+      width: 9vw;
+
+      font-size: 1.5rem;
+
+      border-radius: 15px;
+
+      @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+        width: 7rem;
+        height: 3rem;
+      }
+      @media (min-width: 100px) and (max-width: $screen-phone-small) {
+        width: 7rem;
+        height: 3rem;
+      }
+      @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+        width: 7rem;
+        height: 3rem;
+      }
+    }
+    &-logOut:hover {
+      scale: 0.98;
+    }
+  }
+
+  &__container {
+    &-row {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+    }
+    &-row1 {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &-main {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &__ilustration {
+    background-image: url("../../../../assets/undraw_Profile_re_4a55.png");
+    margin-top: 5vh;
+    margin-left: 10vw;
+    background-size: 60vh;
+    height: 50vh;
+    width: 35vw;
+    background-repeat: no-repeat;
+
+    @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+      background-image: none;
+      background-size: 0;
+      height: 0;
+      width: 0;
+    }
+    @media (min-width: 100px) and (max-width: $screen-phone-small) {
+      background-image: none;
+      background-size: 0;
+      height: 0;
+      width: 0;
+    }
+
+    &-container {
+      margin-top: 15vh;
+    }
+  }
+}

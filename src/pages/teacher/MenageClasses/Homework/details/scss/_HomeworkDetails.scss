@@ -1,0 +1,334 @@
+@media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+}
+
+@media (min-width: 100px) and (max-width: $screen-phone-small) {
+}
+@media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+}
+@media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) {
+}
+@media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) and (orientation: landscape) {
+}
+@media (min-width: $screen-desktop) {
+}
+@keyframes shake-lr {
+  0%,
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+  }
+  10% {
+    transform: rotate(8deg);
+  }
+  20%,
+  40%,
+  60% {
+    transform: rotate(-10deg);
+  }
+  30%,
+  50%,
+  70% {
+    transform: rotate(10deg);
+  }
+  80% {
+    transform: rotate(-8deg);
+  }
+  90% {
+    transform: rotate(8deg);
+  }
+}
+
+.SingleHomework {
+  margin-top: 6vh;
+  margin-left: 5vw;
+  font-family: $third-font-family;
+
+  &__buttons {
+    width: 20vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5vh;
+  }
+  &__btn {
+    &-delete {
+      // background-color: $color-red-1;
+      background-color: $color-gray-light-2;
+      padding: 1.6vh 2.5vw;
+      border-radius: 15px;
+
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+        width: 8rem;
+        height: 4rem;
+      }
+      @media (min-width: 100px) and (max-width: $screen-phone-small) {
+        width: 7rem;
+        height: 3.5rem;
+      }
+      @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+        width: 12rem;
+        height: 4.5rem;
+      }
+      @media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) {
+        width: 13rem;
+        height: 5rem;
+      }
+    }
+    &-delete:hover {
+      animation: shake-lr 0.7s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+    }
+    &-edit {
+      background-color: $color-gray-light-2;
+      padding: 2vh 4vw;
+      border-radius: 15px;
+      font-size: 1.2rem;
+      margin-right: 1vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+        width: 8rem;
+        height: 4rem;
+        margin-right: 1rem;
+        margin-left: 0.5rem;
+      }
+      @media (min-width: 100px) and (max-width: $screen-phone-small) {
+        width: 7rem;
+        height: 3.5rem;
+        margin-right: 1rem;
+        margin-left: 0.5rem;
+      }
+      @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+        width: 12rem;
+        height: 4.5rem;
+        margin-right: 1rem;
+        margin-left: 0rem;
+      }
+      @media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) {
+        width: 13rem;
+        height: 5rem;
+        margin-right: 2rem;
+        margin-left: 4rem;
+      }
+    }
+    &-edit:hover {
+      animation: shake-lr 0.7s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+    }
+  }
+  &__title {
+    font-size: 3rem;
+    @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+      font-size: 2rem;
+    }
+    @media (min-width: 100px) and (max-width: $screen-phone-small) {
+      font-size: 1.7rem;
+    }
+    @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+      font-size: 2.3rem;
+    }
+    @media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) {
+      font-size: 2.4rem;
+    }
+  }
+  &__icon {
+    margin-right: 1vw;
+  }
+  &__icon:hover {
+    scale: 1.1;
+  }
+  &__link {
+    text-decoration: none;
+    color: black;
+  }
+  &__deadline {
+    font-size: 1.8rem;
+    @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+      font-size: 1.7rem;
+    }
+    @media (min-width: 100px) and (max-width: $screen-phone-small) {
+      font-size: 1.7rem;
+    }
+    @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+      font-size: 1.9rem;
+    }
+    @media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) {
+      font-size: 2rem;
+    }
+
+    &-hour {
+      color: $color-black;
+      font-size: 1.4rem;
+      margin-left: 0.25rem;
+    }
+  }
+  &__info {
+    background-color: $color-gray-light-2;
+    margin-left: 5vw;
+    border-radius: 14px;
+    padding: 5vh 5vh;
+    width: 60vw;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+
+    @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+      margin-top: 2rem;
+      width: 18rem;
+      margin-left: -2rem;
+    }
+    @media (min-width: 100px) and (max-width: $screen-phone-small) {
+      margin-top: 2rem;
+      width: 16rem;
+      margin-left: -2rem;
+    }
+    @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+      margin-top: 2rem;
+      width: 25rem;
+      margin-left: 0rem;
+    }
+    @media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) {
+      margin-top: 2rem;
+      width: 35rem;
+      margin-left: 0rem;
+    }
+    &-sbj {
+      font-size: 1.2rem;
+      margin-top: 1vh;
+      color: $color-black;
+      @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+        font-size: 1.1rem;
+      }
+      @media (min-width: 100px) and (max-width: $screen-phone-small) {
+        font-size: 1.1rem;
+      }
+      @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+        font-size: 1.3rem;
+      }
+      @media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) {
+        font-size: 1.4rem;
+      }
+    }
+  }
+  &__info:hover {
+    scale: 1.02;
+  }
+  &__container {
+    &-btns {
+      display: flex;
+      flex-direction: row;
+      width: 20vw;
+      margin-top: 4vh;
+      @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+        align-items: center;
+        width: 20rem;
+      }
+      @media (min-width: 100px) and (max-width: $screen-phone-small) {
+        align-items: center;
+        width: 18rem;
+      }
+      @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+        align-items: center;
+        width: 25rem;
+      }
+      @media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) {
+        align-items: center;
+        width: 35rem;
+      }
+    }
+    &-deadline {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: $color-cyan-2;
+      width: 20vw;
+      padding: 3vh 3vh;
+      border-radius: 14px;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+      @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+        width: 18rem;
+      }
+      @media (min-width: 100px) and (max-width: $screen-phone-small) {
+        width: 16rem;
+      }
+      @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+        width: 25rem;
+      }
+      @media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) {
+        width: 35rem;
+      }
+    }
+    &-deadline:hover {
+      scale: 1.02;
+    }
+    &-info {
+      margin-top: 2rem;
+      background-color: $color-teal-2;
+      width: 20vw;
+      padding: 4vh;
+      border-radius: 14px;
+      font-size: 1.4rem;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+    }
+    &-info:hover {
+      scale: 1.02;
+    }
+    &-row {
+      margin-top: 6vh;
+      display: flex;
+      flex-direction: row;
+      @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 1rem;
+        margin-right: 0;
+      }
+      @media (min-width: 100px) and (max-width: $screen-phone-small) {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 1rem;
+        margin-right: 0;
+      }
+      @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 1rem;
+        margin-right: 0;
+      }
+      @media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 1rem;
+        margin-right: 0;
+      }
+    }
+    &-utility {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+}
+.info {
+  &-label {
+    font-size: 1.7rem;
+    margin-bottom: 2vh;
+    color: $color-black;
+  }
+  &-text {
+    font-size: 1.2rem;
+    color: $color-grey-dark-3;
+  }
+}
+
+.description {
+  margin-bottom: 0.5rem;
+  &__label {
+    font-size: 1.2rem;
+    opacity: 90%;
+    margin-right: 0.5vw;
+  }
+}

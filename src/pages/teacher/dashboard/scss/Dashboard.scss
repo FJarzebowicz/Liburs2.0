@@ -1,0 +1,214 @@
+@media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+}
+
+@media (min-width: 100px) and (max-width: $screen-phone-small) {
+}
+@media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+}
+@media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) {
+}
+@media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) and (orientation: landscape) {
+}
+@media (min-width: $screen-desktop) {
+}
+
+.Dashboard {
+  max-width: 90vw;
+  padding: 0;
+
+  &__content {
+    margin-top: 10vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    height: 90%;
+    width: 90%;
+
+    @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      margin-left: 0;
+      margin-right: 0;
+    }
+    @media (min-width: 100px) and (max-width: $screen-phone-small) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      margin-left: 0;
+      margin-right: 0;
+    }
+    @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      margin-left: 0;
+      margin-right: 0;
+    }
+    @media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  &__container {
+    &-row {
+      display: flex;
+      flex-direction: row;
+      margin-right: 5rem;
+    }
+  }
+  &__all {
+    width: 90vw;
+    height: 100vh;
+  }
+  &__margin {
+    &-top {
+      margin-top: 10vh;
+    }
+  }
+  &__ilustration {
+    background-image: url("../../../../assets/Back-to-School-Illustration.jpg.crdownload");
+    margin-top: 5vh;
+    margin-left: 10vw;
+    background-size: 60vh;
+    height: 45vh;
+    width: 30vw;
+    background-repeat: no-repeat;
+  }
+  &__ilustration2 {
+    background-image: url("../../../../assets/undraw_Exams_re_4ios.png");
+    margin-top: 5vh;
+    margin-left: 10vw;
+    background-size: 60vh;
+    height: 45vh;
+    width: 30vw;
+    background-repeat: no-repeat;
+
+    @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+      background-image: none;
+      height: 0;
+      width: 0;
+    }
+    @media (min-width: 100px) and (max-width: $screen-phone-small) {
+      background-image: none;
+      height: 0;
+      width: 0;
+    }
+    @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+      background-size: 20rem;
+      width: 18rem;
+      height: 18rem;
+      margin-left: 0rem;
+    }
+    @media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) {
+      background-size: 26rem;
+      width: 28rem;
+      height: 28rem;
+      margin-left: 0rem;
+    }
+    @media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) and (orientation: landscape) {
+      background-size: 26rem;
+      width: 28rem;
+      height: 28rem;
+      margin-left: 0rem;
+    }
+  }
+  &__ilustration3 {
+    background-image: url("../../../../assets/undraw_education_f8ru.png");
+    margin-top: 10vh;
+    margin-left: 10vw;
+    background-size: 35rem;
+    height: 40rem;
+    width: 40rem;
+    background-repeat: no-repeat;
+
+    @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+      background-image: none;
+      height: 0;
+      width: 0;
+    }
+    @media (min-width: 100px) and (max-width: $screen-phone-small) {
+      background-image: none;
+      height: 0;
+      width: 0;
+    }
+    @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+      background-size: 20rem;
+      width: 18rem;
+      height: 18rem;
+      margin-left: 0rem;
+    }
+    @media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) {
+      background-size: 26rem;
+      width: 28rem;
+      height: 28rem;
+      margin-left: 0rem;
+    }
+    @media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) and (orientation: landscape) {
+      background-size: 26rem;
+      width: 28rem;
+      height: 28rem;
+      margin-left: 0rem;
+    }
+  }
+
+  &__ilustration1 {
+    background-image: url("../../../../assets/Back-to-School-Illustration.jpg.crdownload");
+    margin-top: 5vh;
+    margin-left: 10vw;
+    background-size: 80vh;
+    height: 60vh;
+    width: 50vw;
+    background-repeat: no-repeat;
+  }
+  &__row {
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-between;
+    @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+      flex-direction: column;
+      justify-content: baseline;
+    }
+    @media (min-width: 100px) and (max-width: $screen-phone-small) {
+      flex-direction: column;
+      justify-content: baseline;
+    }
+  }
+  &__col {
+    width: 50vw;
+    @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+      width: 10rem;
+      margin-bottom: 8rem;
+    }
+    @media (min-width: 100px) and (max-width: $screen-phone-small) {
+      width: 10rem;
+      margin-bottom: 8rem;
+    }
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+      margin-top: -12rem;
+      justify-content: center;
+      align-items: center;
+    }
+    @media (min-width: 100px) and (max-width: $screen-phone-small) {
+      margin-top: -12rem;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

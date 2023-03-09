@@ -1,0 +1,18 @@
+.menu {
+  &__title {
+    color: $color-black;
+    font-family: $third-font-family;
+    font-size: $default-font-size;
+    margin-bottom: 1rem;
+    margin-right: 2rem;
+    margin-left: 1rem;
+  }
+
+  &__icon {
+    color: $color-teal-3;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+}

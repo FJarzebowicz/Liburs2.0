@@ -1,0 +1,172 @@
+@media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+}
+
+@media (min-width: 100px) and (max-width: $screen-phone-small) {
+}
+@media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+}
+@media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) {
+}
+@media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) and (orientation: landscape) {
+}
+@media (min-width: $screen-desktop) {
+}
+
+.Calendar {
+  margin-top: 15vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  display: flex;
+  flex-direction: row;
+
+  &__link {
+    text-decoration: none;
+    color: black;
+  }
+  &__link:hover,
+  &__link:focus {
+    text-decoration: none;
+    color: black;
+    scale: 1.03;
+  }
+
+  &__box {
+    margin-top: 0vh;
+    width: 40vw;
+    height: 70vh;
+    margin-right: 6vw;
+    @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+      width: 80vw;
+      height: 20rem;
+    }
+    @media (min-width: 100px) and (max-width: $screen-phone-small) {
+      width: 20rem;
+      height: 20rem;
+    }
+    @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+      width: 80vw;
+      height: 23rem;
+    }
+    @media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) {
+    }
+  }
+  &__it {
+    @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+      width: 80vw;
+    }
+    @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+      width: 80vw;
+    }
+    @media (min-width: 100px) and (max-width: $screen-phone-small) {
+      width: 80vw;
+    }
+  }
+  &__events {
+    display: flex;
+    padding-left: 4vw;
+    width: 42vw;
+    flex-direction: column;
+    @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+      padding: 0;
+      flex-direction: column;
+      display: flex;
+    }
+    @media (min-width: 100px) and (max-width: $screen-phone-small) {
+      padding: 0;
+      flex-direction: column;
+      display: flex;
+    }
+    @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+      padding: 0;
+      flex-direction: column;
+      display: flex;
+    }
+  }
+  &__event:hover {
+    scale: 1.02;
+  }
+  &__event {
+    margin-bottom: 2vh;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+    width: 30vw;
+    min-height: 12vh;
+    padding: 2vh 2vw;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 4vh;
+
+    @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+      width: 80vw;
+    }
+    @media (min-width: 100px) and (max-width: $screen-phone-small) {
+      width: 16rem;
+    }
+    @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+      width: 80vw;
+    }
+
+    &-teal {
+      background-color: $color-teal-1;
+    }
+    &-blue {
+      background-color: $color-blue-1;
+    }
+    &-pink {
+      background-color: $color-pink-1;
+    }
+    &-orange {
+      background-color: $color-orange-1;
+    }
+    &-red {
+      background-color: $color-red-1;
+    }
+    &-yellow {
+      background-color: $color-yellow-1;
+    }
+
+    &-title {
+      font-family: $third-font-family;
+      font-size: 1.6rem;
+      color: $color-black;
+
+      margin-left: 2vw;
+    }
+  }
+}
+
+.Event {
+  &__container {
+    &-align {
+      display: flex;
+      align-items: center;
+    }
+    &-column {
+      display: flex;
+      flex-direction: column;
+    }
+    &-center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &__hours {
+    font-family: $third-font-family;
+    font-size: 1rem;
+    margin-left: 1vw;
+    color: black;
+  }
+  &__category {
+    margin-top: 1vh;
+    margin-left: 2vw;
+    font-family: $third-font-family;
+    font-size: 0.9rem;
+  }
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

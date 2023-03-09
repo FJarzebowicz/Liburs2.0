@@ -1,0 +1,124 @@
+@media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+}
+
+@media (min-width: 100px) and (max-width: $screen-phone-small) {
+}
+@media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+}
+@media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) {
+}
+@media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) and (orientation: landscape) {
+}
+@media (min-width: $screen-desktop) {
+}
+
+.Users {
+  font-family: $third-font-family;
+
+  &__teacher {
+    margin-bottom: 2vh;
+    padding-bottom: 2.5vh;
+    border-bottom: 2px solid $color-gray-light-1;
+  }
+
+  &__link {
+    color: black;
+    text-decoration: none;
+  }
+  &__content {
+    margin-top: 15vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    padding-left: 5vw;
+    @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+      margin-top: 6rem;
+      margin-left: 1rem;
+      margin-right: 0;
+    }
+    @media (min-width: 100px) and (max-width: $screen-phone-small) {
+      margin-left: 1rem;
+      margin-right: 0;
+      margin-top: 6rem;
+    }
+  }
+  &__category {
+    width: 35vw;
+
+    margin-right: 10vw;
+    min-height: 70vh;
+    padding-left: 2vw;
+    display: flex;
+
+    @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+      margin-right: 8vw;
+    }
+    @media (min-width: 100px) and (max-width: $screen-phone-small) {
+      margin-right: 8vw;
+    }
+
+    flex-direction: column;
+  }
+  &__header {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 5vh;
+    margin-bottom: 3vh;
+  }
+  &__label {
+    font-size: 2.3rem;
+    margin-right: 1vw;
+
+    @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+      font-size: 1.8rem;
+    }
+    @media (min-width: 100px) and (max-width: $screen-phone-small) {
+      font-size: 1.8rem;
+    }
+  }
+  &__teachers {
+    flex-direction: column;
+    background-color: $color-gray-light-2;
+    min-width: 100%;
+    min-height: 15vh;
+    border-radius: 15px;
+    padding: 2.5vh 3vw;
+    display: flex;
+
+    &-name {
+      font-size: 1.6rem;
+      margin-bottom: 0.8vh;
+
+      @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+        font-size: 1.3rem;
+      }
+      @media (min-width: 100px) and (max-width: $screen-phone-small) {
+        font-size: 1.3rem;
+      }
+    }
+  }
+  &__student {
+    flex-direction: column;
+    background-color: $color-gray-light-2;
+    width: 100%;
+    min-height: 15vh;
+    border-radius: 15px;
+    padding: 2.5vh 3vw;
+    display: flex;
+    &-name {
+      font-size: 1.6rem;
+      margin-bottom: 0.8vh;
+
+      @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+        font-size: 1.3rem;
+      }
+      @media (min-width: 100px) and (max-width: $screen-phone-small) {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}

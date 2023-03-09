@@ -1,0 +1,120 @@
+.Homeworks {
+  margin-top: 13vh;
+
+  &__container {
+    display: flex;
+    margin-top: 3vh;
+    margin-left: 3vw;
+    flex-wrap: wrap;
+  }
+}
+.Stats {
+  justify-content: center;
+  border-radius: 20px;
+  padding: 1rem 1rem;
+  display: flex;
+  width: 60vw;
+  background-color: $color-gray-light-2;
+  min-height: 4vh;
+  box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+
+  &__label {
+    font-family: $third-font-family;
+    font-size: 1.2rem;
+    // border-bottom: 2px solid $color-teal-3;
+  }
+  &__col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__num {
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-family: $third-font-family;
+  }
+}
+.Stats:hover {
+  scale: 1.01;
+}
+
+.Homework {
+  background-color: $color-yellow-2;
+  padding: 2rem 2rem;
+  border-radius: 20px;
+  width: 24vw;
+  min-height: 15vh;
+  margin-right: 3vw;
+  margin-bottom: 3vh;
+  box-shadow: 0 1rem 1rem rgba($color-black, 0.1);
+
+  @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+    width: 18rem;
+  }
+  @media (min-width: 100px) and (max-width: $screen-phone-small) {
+    width: 16rem;
+  }
+  @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+    width: 19rem;
+  }
+
+  &-name {
+    font-size: 1.6rem;
+    font-family: $third-font-family;
+    margin-bottom: 3vh;
+    @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+      font-size: 1.7rem;
+    }
+    @media (min-width: 100px) and (max-width: $screen-phone-small) {
+      font-size: 1.7rem;
+    }
+  }
+  &-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &-Deadline {
+    font-size: 1.1rem;
+    font-family: $third-font-family;
+  }
+  &-subject {
+    font-size: 1.1rem;
+    font-family: $third-font-family;
+  }
+  &-link {
+    text-decoration: none;
+    color: black;
+  }
+  &-teal {
+    background-color: $color-teal-1;
+  }
+  &-blue {
+    background-color: $color-blue-1;
+  }
+  &-pink {
+    background-color: $color-pink-1;
+  }
+  &-orange {
+    background-color: $color-orange-1;
+  }
+  &-red {
+    background-color: $color-red-1;
+  }
+  &-yellow {
+    background-color: $color-yellow-1;
+  }
+  &-green {
+    background-color: $color-green-3;
+  }
+  &-pink {
+    background-color: $color-pink-1;
+  }
+  &-purple {
+    background-color: $color-indingo-3;
+  }
+}
+.Homework:hover {
+  scale: 1.01;
+}

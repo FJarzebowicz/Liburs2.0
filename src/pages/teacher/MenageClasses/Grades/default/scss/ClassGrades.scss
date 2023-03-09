@@ -1,0 +1,78 @@
+@media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+}
+
+@media (min-width: 100px) and (max-width: $screen-phone-small) {
+}
+@media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+}
+@media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) {
+}
+@media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) and (orientation: landscape) {
+}
+@media (min-width: $screen-desktop) {
+}
+
+.ClassGrades {
+  margin-top: 8vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  font-family: $third-font-family;
+
+  @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  @media (min-width: 100px) and (max-width: $screen-phone-small) {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  @media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__link {
+    color: black;
+    text-decoration: none;
+  }
+  &__link:hover {
+    scale: 1.02;
+  }
+  &-title {
+    font-size: 2.3rem;
+    margin-top: -1vh;
+
+    @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+      font-size: 1.5rem;
+    }
+    @media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) {
+      font-size: 1.8rem;
+    }
+  }
+  &-title:hover {
+    scale: 1.02;
+  }
+
+  &__container {
+    &-row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+}

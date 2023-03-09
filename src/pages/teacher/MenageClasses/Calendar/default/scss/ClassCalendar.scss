@@ -1,0 +1,56 @@
+@media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+}
+
+@media (min-width: 100px) and (max-width: $screen-phone-small) {
+}
+@media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+}
+@media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) {
+}
+@media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) and (orientation: landscape) {
+}
+@media (min-width: $screen-desktop) {
+}
+
+.MCalendar {
+  margin-top: 8vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+
+  &__margin {
+    &-top {
+      margin-top: 20vh;
+    }
+  }
+  &__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  &__calendar {
+    margin-top: 8vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: flex;
+    flex-direction: row;
+    @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+      flex-direction: column;
+      display: flex;
+    }
+    @media (min-width: 100px) and (max-width: $screen-phone-small) {
+      flex-direction: column;
+      display: flex;
+    }
+    @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+      flex-direction: column;
+      display: flex;
+    }
+  }
+  &__calendar1 {
+    margin-top: 12vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: flex;
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,235 @@
+@media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+}
+
+@media (min-width: 100px) and (max-width: $screen-phone-small) {
+}
+@media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+}
+@media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) {
+}
+@media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) and (orientation: landscape) {
+}
+@media (min-width: $screen-desktop) {
+}
+
+.AddAttendance {
+  margin-top: 8vh;
+  margin-left: 5vw;
+  font-family: $third-font-family;
+  margin-right: 5vw;
+
+  &__select {
+    font-family: $third-font-family;
+    width: 25vw;
+    border-radius: 20px;
+    padding: 2vh 2vw;
+    border: none;
+    background-color: $color-gray-light-2;
+    font-size: 1.4rem;
+
+    @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+      width: 18rem;
+    }
+    @media (min-width: 100px) and (max-width: $screen-phone-small) {
+      width: 18rem;
+    }
+    @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+      width: 23rem;
+    }
+    @media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) {
+      width: 32rem;
+      height: 5rem;
+      margin-left: -3rem;
+    }
+
+    &-teal {
+      background-color: $color-teal-1;
+    }
+    &-blue {
+      background-color: $color-blue-1;
+    }
+    &-pink {
+      background-color: $color-pink-1;
+    }
+    &-orange {
+      background-color: $color-orange-1;
+    }
+    &-red {
+      background-color: $color-red-1;
+    }
+    &-yellow {
+      background-color: $color-yellow-1;
+    }
+  }
+
+  &__calendar {
+    width: 40vw;
+    margin-left: 5vw;
+    @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+      margin-left: 0;
+      width: 18rem;
+      margin-left: 1rem;
+    }
+    @media (min-width: 100px) and (max-width: $screen-phone-small) {
+      width: 17rem;
+      margin-left: 1rem;
+    }
+    @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+      width: 21rem;
+      margin-left: 1rem;
+    }
+    @media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) {
+      width: 28rem;
+
+      margin-left: 1rem;
+    }
+  }
+  &__container {
+    &-row {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  &__form {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 8vh;
+    display: flex;
+    flex-direction: row;
+
+    @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+      flex-direction: column;
+      margin-left: 0;
+      margin-right: 0;
+
+      align-items: center;
+    }
+
+    @media (min-width: 100px) and (max-width: $screen-phone-small) {
+      flex-direction: column;
+      margin-left: 0;
+      margin-right: 0;
+
+      align-items: center;
+    }
+    @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+      flex-direction: column;
+      margin-left: 0;
+      margin-right: 0;
+
+      align-items: center;
+    }
+    &-category {
+      margin-left: 5vw;
+      margin-bottom: 4vh;
+    }
+    @media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) {
+      flex-direction: column;
+      margin-left: 0;
+      margin-right: 0;
+
+      align-items: center;
+    }
+  }
+  &__title {
+    font-size: 2.5rem;
+
+    @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+      font-size: 0;
+    }
+    @media (min-width: 100px) and (max-width: $screen-phone-small) {
+      font-size: 0rem;
+    }
+    @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+      font-size: 2rem;
+    }
+  }
+
+  &__container {
+    &-row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    &-row2 {
+      display: flex;
+      flex-direction: row;
+      @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      @media (min-width: 100px) and (max-width: $screen-phone-small) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    &-column {
+      display: flex;
+      flex-direction: column;
+    }
+    &-row1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+        // margin-left: 0.5rem;
+        // margin-right: 0.5rem;
+        width: 100vw;
+      }
+      @media (min-width: 100px) and (max-width: $screen-phone-small) {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  &__btn {
+    background-color: $color-teal-1;
+    font-size: 1.2rem;
+    padding: 1.5vh 3vw;
+    border-radius: 20px;
+    margin-left: 3vw;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+    text-align: center;
+    @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+      width: 6rem;
+      height: 3rem;
+      border-radius: 17px;
+      margin-right: 1.5rem;
+    }
+    @media (min-width: 100px) and (max-width: $screen-phone-small) {
+      width: 6rem;
+      height: 3rem;
+      border-radius: 17px;
+    }
+    @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+      width: 8rem;
+      height: 4rem;
+      border-radius: 17px;
+      text-align: center;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      padding: 0;
+    }
+    @media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) {
+      width: 8rem;
+      height: 4rem;
+      border-radius: 17px;
+      text-align: center;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      padding: 0;
+    }
+  }
+}

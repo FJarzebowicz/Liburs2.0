@@ -1,0 +1,138 @@
+@media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+}
+
+@media (min-width: 100px) and (max-width: $screen-phone-small) {
+}
+@media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+}
+@media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) {
+}
+@media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) and (orientation: landscape) {
+}
+@media (min-width: $screen-desktop) {
+}
+
+.ClassGrades {
+  margin-top: 8vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  font-family: $third-font-family;
+
+  &__content {
+    @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    @media (min-width: 100px) and (max-width: $screen-phone-small) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  @media (min-width: 100px) and (max-width: $screen-phone-small) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+  }
+
+  &__link {
+    color: black;
+    text-decoration: none;
+  }
+  &__link:hover {
+    scale: 1.02;
+  }
+
+  &-title {
+    font-size: 2.3rem;
+    margin-top: -1vh;
+
+    @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+      font-size: 0rem;
+    }
+    @media (min-width: 100px) and (max-width: $screen-phone-small) {
+      font-size: 0rem;
+    }
+    @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+      font-size: 1.9rem;
+    }
+    @media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) {
+      font-size: 2.1rem;
+    }
+  }
+  &-title:hover {
+    scale: 1.02;
+  }
+
+  &__container {
+    &-row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    &-row1 {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+}
+.Messages {
+  &__btn {
+    &-add {
+      position: fixed;
+      bottom: 5vh;
+      left: 90vw;
+      background-color: $color-yellow-1;
+      width: 4.5rem;
+      height: 4.5rem;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+
+      @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+        left: 70%;
+        bottom: 3%;
+      }
+      @media (min-width: 100px) and (max-width: $screen-phone-small) {
+        left: 75%;
+        bottom: 3%;
+      }
+      @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+        left: 85%;
+        bottom: 5%;
+      }
+      @media (min-width: $screen-desktop) {
+        height: 5rem;
+        width: 5rem;
+      }
+    }
+    &-add:hover {
+      scale: 1.05;
+    }
+  }
+}

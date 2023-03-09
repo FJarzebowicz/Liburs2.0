@@ -1,0 +1,263 @@
+@media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+}
+
+@media (min-width: 100px) and (max-width: $screen-phone-small) {
+}
+@media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+}
+@media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) {
+}
+@media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) and (orientation: landscape) {
+}
+@media (min-width: $screen-desktop) {
+}
+
+@keyframes shake-lr {
+  0%,
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+  }
+  10% {
+    transform: rotate(8deg);
+  }
+  20%,
+  40%,
+  60% {
+    transform: rotate(-10deg);
+  }
+  30%,
+  50%,
+  70% {
+    transform: rotate(10deg);
+  }
+  80% {
+    transform: rotate(-8deg);
+  }
+  90% {
+    transform: rotate(8deg);
+  }
+}
+.CalendarEvent {
+  margin-top: 8vh;
+  font-family: $third-font-family;
+  margin-left: 5vw;
+  @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+    margin-left: 0vw;
+  }
+  @media (min-width: 100px) and (max-width: $screen-phone-small) {
+    margin-left: 0vw;
+  }
+  &__buttons {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    width: 30vw;
+    @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+      width: 20rem;
+    }
+    @media (min-width: 100px) and (max-width: $screen-phone-small) {
+      width: 20rem;
+    }
+
+    justify-content: center;
+  }
+  &__btn {
+    &-edit {
+      border-radius: 20px;
+      background-color: $color-gray-light-2;
+      padding: 2vh 4.5vw;
+      font-size: 1.3rem;
+      margin-right: 3vw;
+      margin-left: 0;
+      @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+        width: 7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      @media (min-width: 100px) and (max-width: $screen-phone-small) {
+        width: 7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+    }
+    &-delete {
+      border-radius: 20px;
+      background-color: $color-gray-light-2;
+      padding: 2vh 4vw;
+      font-size: 1.3rem;
+      @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+        width: 7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      @media (min-width: 100px) and (max-width: $screen-phone-small) {
+        width: 7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+    }
+  }
+  &__btn-delete:hover,
+  &__btn-edit:hover {
+    animation: shake-lr 0.7s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: black;
+  }
+  &__link:hover &__link:active &__link:focus {
+    text-decoration: none;
+    color: black;
+  }
+  &__container {
+    &-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &-center1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    &-column {
+      @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+      }
+      @media (min-width: 100px) and (max-width: $screen-phone-small) {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+  &__header {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+
+    @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+      margin-left: 5vw;
+    }
+    @media (min-width: 100px) and (max-width: $screen-phone-small) {
+      margin-left: 5vw;
+    }
+    &-title {
+      margin-left: 1vw;
+      font-size: 3.2rem;
+      @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+        font-size: 2.5rem;
+      }
+      @media (min-width: 100px) and (max-width: $screen-phone-small) {
+        font-size: 2.5rem;
+      }
+    }
+    &-icon:hover {
+      scale: 1.1;
+    }
+  }
+  &__box {
+    display: flex;
+    flex-direction: row;
+    @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    @media (min-width: 100px) and (max-width: $screen-phone-small) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__info {
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+    border-radius: 15px;
+    margin-top: 7vh;
+    min-height: 45vh;
+    width: 30vw;
+    padding: 3vh 3vw;
+    @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+      width: 18rem;
+      padding: 1rem 1rem;
+      min-height: 15rem;
+    }
+    @media (min-width: 100px) and (max-width: $screen-phone-small) {
+      width: 16rem;
+      padding: 1rem 1rem;
+      min-height: 15rem;
+    }
+
+    &-subcjet {
+      font-size: 2.2rem;
+    }
+    &-label {
+      font-size: 1.2rem;
+      margin-right: 1vw;
+      font-weight: 300;
+    }
+
+    &-type {
+      font-size: 1.5rem;
+      margin-top: 4vh;
+      margin-bottom: 3vh;
+    }
+    &-teacher {
+      font-size: 1.5rem;
+      margin-top: 2vh;
+      margin-bottom: 3vh;
+    }
+    &-date {
+      font-size: 1.5rem;
+      margin-top: 2vh;
+      margin-bottom: 3vh;
+    }
+    &-hours {
+      font-size: 1.5rem;
+      margin-top: 2vh;
+      margin-bottom: 3vh;
+    }
+  }
+  &__description {
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.05);
+    background-color: $color-gray-light-2;
+    margin-top: 7vh;
+    border-radius: 15px;
+    margin-left: 4vw;
+    padding: 0 3vw;
+    width: 50vw;
+    min-height: 50vh;
+    @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+      width: 18rem;
+      margin-left: 0;
+    }
+    @media (min-width: 100px) and (max-width: $screen-phone-small) {
+      width: 16rem;
+      margin-left: 0;
+    }
+    &-title {
+      font-size: 1.5rem;
+      margin-bottom: 2vh;
+    }
+    &-text {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.marginTop-big {
+  margin-top: 5vh;
+}

@@ -1,0 +1,79 @@
+@media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+}
+
+@media (min-width: 100px) and (max-width: $screen-phone-small) {
+}
+@media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+}
+@media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) {
+}
+@media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) and (orientation: landscape) {
+}
+@media (min-width: $screen-desktop) {
+}
+
+.AttendanceDetails {
+  margin-top: 8vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  font-family: $third-font-family;
+  &__utility {
+    margin-top: 5vh;
+    margin-right: 4vw;
+  }
+  &__text {
+    &-filter {
+      margin-right: 1vw;
+      font-size: 1.05rem;
+
+      @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+        font-size: 0.9rem;
+        margin-top: 0.15rem;
+      }
+      @media (min-width: 100px) and (max-width: $screen-phone-small) {
+        font-size: 0.9rem;
+        margin-top: 0.15rem;
+      }
+    }
+  }
+  &__container {
+    display: flex;
+    flex-direction: row;
+  }
+  &__margin {
+    &-top {
+      margin-top: 12vh;
+    }
+  }
+  &__header {
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__content {
+    width: 90vw;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__popover {
+    &-buttons {
+      display: flex;
+      flex-direction: row;
+
+      justify-content: center;
+      margin-bottom: 1vh;
+    }
+    &-btn {
+      font-family: $third-font-family;
+      border-radius: 20px;
+      padding: 1.5vh 2vw;
+      font-size: 1.1rem;
+      margin-left: 1vw;
+    }
+  }
+}

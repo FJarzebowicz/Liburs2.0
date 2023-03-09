@@ -1,0 +1,56 @@
+.schedule {
+  margin-top: 6rem;
+  margin-left: 1%;
+
+  &__day {
+    &-container {
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+      // box-shadow: 0 0.5rem 0.5rem rgba($color-black, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 2rem;
+      margin-right: 1.5%;
+
+      background-color: $color-gray-light-1;
+      border-radius: 20px;
+    }
+    &-container:hover {
+      scale: 1.01;
+    }
+    &-header {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+
+      font-size: $default-font-size;
+      font-family: $third-font-family;
+    }
+  }
+
+  &__lesson {
+    padding: 1rem 1rem;
+    // box-shadow: 0 1rem 1rem rgba($color-black, 0.1);
+    align-items: center;
+    display: flex;
+    border-radius: 10px;
+    width: 90%;
+    background-color: $color-teal-1;
+
+    &-utilityCon {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-time {
+      margin-left: 1rem;
+      font-size: 1.2rem;
+      font-family: $third-font-family;
+    }
+
+    &-title {
+      font-size: 1.8rem;
+      margin-left: 15%;
+      font-family: $third-font-family;
+    }
+  }
+}

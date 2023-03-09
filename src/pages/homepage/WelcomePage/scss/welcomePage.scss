@@ -1,0 +1,298 @@
+@keyframes shake-lr {
+  0%,
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+  }
+  10% {
+    transform: rotate(8deg);
+  }
+  20%,
+  40%,
+  60% {
+    transform: rotate(-10deg);
+  }
+  30%,
+  50%,
+  70% {
+    transform: rotate(10deg);
+  }
+  80% {
+    transform: rotate(-8deg);
+  }
+  90% {
+    transform: rotate(8deg);
+  }
+}
+
+.Homepage {
+  //   background-image: url("../../../assets/bPhoto.png");
+  //   background-image: url("../../../assets/preview.jpg");
+  background-image: url("../../../../assets/Back-to-School-Illustration.jpg.crdownload");
+  height: 100vh;
+
+  background-size: 60%;
+
+  width: 100vw;
+  background-repeat: no-repeat;
+
+  @media (min-width: 0px) and (max-width: $screen-phone-small) {
+    background-size: 26rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+  }
+  @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+    background-size: 27rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+  }
+  @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+    background-size: 37rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+  }
+  @media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) {
+    background-size: 45rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+  }
+  @media (min-width: $screen-desktop) {
+    background-size: 65rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  @media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) and (orientation: landscape) {
+    background-size: 30rem;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+
+    @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+    }
+
+    @media (min-width: 100px) and (max-width: $screen-phone-small) {
+    }
+    @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+    }
+    @media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) {
+    }
+    @media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) and (orientation: landscape) {
+    }
+    @media (min-width: $screen-desktop) {
+    }
+
+    height: 50vh;
+    &-title {
+      font-size: 2rem;
+
+      @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+        font-size: 1.7rem;
+      }
+      @media (min-width: 0px) and (max-width: $screen-phone-small) {
+        font-size: 1.4rem;
+      }
+      @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+        font-size: 2.1rem;
+      }
+      @media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) {
+        font-size: 2.5rem;
+      }
+      @media (min-width: $screen-desktop) {
+        font-size: 2.2rem;
+      }
+      @media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) and (orientation: landscape) {
+        font-size: 1.8rem;
+      }
+    }
+    &-buttons {
+      margin-top: 4vh;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+
+      @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+        margin-top: 3vh;
+        display: flex;
+        justify-content: space-between;
+      }
+      @media (min-width: 0px) and (max-width: $screen-phone-small) {
+        margin-top: 3vh;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+  &__link:not(:last-child) {
+    margin-right: 2vw;
+  }
+  &__link {
+    text-decoration: none;
+    color: black;
+  }
+  &__btn {
+    background-color: $color-orange-2;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.12);
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    justify-content: center;
+    font-size: 1.3em;
+    padding: 2.1vh 3.5vw;
+
+    &-teal {
+      background-color: $color-teal-1;
+    }
+
+    @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+      width: 9rem;
+      height: 4.5rem;
+      margin-right: 1rem;
+      margin-left: 1rem;
+    }
+    @media (min-width: 0px) and (max-width: $screen-phone-small) {
+      width: 7.5rem;
+      height: 3.5rem;
+      margin-right: 1rem;
+      margin-left: 1rem;
+    }
+    @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+      width: 11rem;
+      height: 5rem;
+      font-size: 1.5rem;
+      margin-right: 0.5rem;
+      margin-left: 0.5rem;
+    }
+    @media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) {
+      width: 12rem;
+      height: 6rem;
+      font-size: 1.7rem;
+      margin-right: 0.5rem;
+      margin-left: 0.5rem;
+    }
+    @media (min-width: $screen-desktop) {
+      width: 13rem;
+      height: 5rem;
+      font-size: 1.8rem;
+      margin-right: 0.5rem;
+      margin-left: 0.5rem;
+    }
+    @media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) and (orientation: landscape) {
+      width: 11rem;
+      height: 5rem;
+      font-size: 1.5rem;
+      margin-right: 0.5rem;
+      margin-left: 0.5rem;
+    }
+  }
+
+  &__btn:not(:last-child) {
+    margin-right: 3vw;
+  }
+
+  &__btn:hover {
+    animation: shake-lr 0.7s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  }
+
+  &__box {
+    position: relative;
+    font-family: $third-font-family;
+    float: right;
+    width: 40vw;
+    height: 60vh;
+    margin-right: 2vw;
+    margin-top: 19vh;
+
+    padding: 2vh 2vw;
+
+    @media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) and (orientation: landscape) {
+      padding: 0;
+    }
+
+    @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+      padding: 0;
+      margin-top: 30vh;
+      margin-right: 0;
+      width: 100%;
+      height: 30rem;
+    }
+    @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+      position: relative;
+      float: left;
+      margin-top: 42vh;
+      width: 100%;
+      height: 43rem;
+    }
+    @media (min-width: 0px) and (max-width: $screen-phone-small) {
+      padding: 0;
+      margin-top: 30vh;
+      margin-right: 0;
+      width: 100%;
+      height: 30rem;
+    }
+    @media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) {
+      position: relative;
+      float: left;
+      margin-top: 42vh;
+      width: 100%;
+      height: 43rem;
+    }
+
+    &-title {
+      font-size: 6rem;
+      text-align: center;
+      margin-bottom: 8vh;
+
+      @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+        font-size: 4.5rem;
+        margin-bottom: 2rem;
+        margin-top: 8rem;
+      }
+      @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+        font-size: 7rem;
+        margin-top: 2rem;
+      }
+      @media (min-width: 0px) and (max-width: $screen-phone-small) {
+        font-size: 4.5rem;
+        margin-bottom: 2rem;
+        margin-top: 7rem;
+      }
+      @media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) {
+        font-size: 7rem;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+      }
+      @media (min-width: $screen-desktop) {
+        font-size: 7rem;
+        margin-top: 2rem;
+        margin-bottom: 7rem;
+      }
+      @media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) and (orientation: landscape) {
+        font-size: 6rem;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+      }
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+  }
+}

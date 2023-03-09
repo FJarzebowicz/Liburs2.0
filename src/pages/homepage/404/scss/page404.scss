@@ -1,0 +1,120 @@
+@media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+}
+
+@media (min-width: 100px) and (max-width: $screen-phone-small) {
+}
+@media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+}
+@media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) {
+}
+@media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) and (orientation: landscape) {
+}
+@media (min-width: $screen-desktop) {
+}
+
+.page404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  &__ilustration {
+    background-image: url("../../../../assets/undraw_Page_not_found_re_e9o6.png");
+    margin-top: 5vh;
+
+    background-size: 75vh;
+    height: 50vh;
+    width: 35vw;
+    background-repeat: no-repeat;
+
+    @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+      width: 20rem;
+      height: 15rem;
+      justify-content: center;
+      background-position: center;
+      background-size: 18rem;
+    }
+    @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+      width: 40rem;
+      height: 30rem;
+      justify-content: center;
+      background-position: center;
+      background-size: 35rem;
+    }
+    @media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) {
+      width: 45rem;
+      height: 35rem;
+      justify-content: center;
+      background-position: center;
+      background-size: 40rem;
+    }
+    @media (min-width: 100px) and (max-width: $screen-phone-small) {
+      width: 19rem;
+      height: 14rem;
+      justify-content: center;
+      background-position: center;
+      background-size: 17rem;
+    }
+    &-container {
+      margin-top: 15vh;
+    }
+  }
+  &__container {
+    &-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 4vh;
+    }
+    &-btn:hover {
+      animation: shake-lr 0.7s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+    }
+  }
+  &__text {
+    &-header {
+      font-size: 2.8rem;
+      font-family: $third-font-family;
+      @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+        font-size: 1.8rem;
+      }
+      @media (min-width: 100px) and (max-width: $screen-phone-small) {
+        font-size: 1.7rem;
+      }
+    }
+    &-base {
+      font-family: $third-font-family;
+      opacity: 0.9;
+      margin-top: 2vh;
+      @media (min-width: 100px) and (max-width: $screen-phone-small) {
+        font-size: 0.9rem;
+      }
+    }
+  }
+  &__btn {
+    background-color: $color-orange-2;
+    width: 9vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $third-font-family;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+      width: 8rem;
+      height: 3.5rem;
+    }
+    @media (min-width: 100px) and (max-width: $screen-phone-small) {
+      width: 8rem;
+      height: 3.5rem;
+    }
+    @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+      width: 10rem;
+      height: 5rem;
+    }
+    @media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) {
+      width: 10rem;
+      height: 5rem;
+    }
+  }
+}

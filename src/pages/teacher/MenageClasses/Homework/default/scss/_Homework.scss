@@ -1,0 +1,65 @@
+@media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+}
+
+@media (min-width: 100px) and (max-width: $screen-phone-small) {
+}
+@media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+}
+@media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) {
+}
+@media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) and (orientation: landscape) {
+}
+@media (min-width: $screen-desktop) {
+}
+
+.MHomework {
+  margin-top: 8vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  font-family: $third-font-family;
+
+  &__content {
+    margin-top: 15vh;
+  }
+  &__content {
+    margin-top: 15vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    @media (min-width: 100px) and (max-width: $screen-phone-small) {
+      margin-left: 0vw;
+      margin-right: 0vw;
+    }
+    @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+      margin-left: 0vw;
+      margin-right: 0vw;
+    }
+    @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+      margin-left: 0vw;
+      margin-right: 0vw;
+    }
+  }
+  &__content1 {
+    margin-top: 25vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+  }
+
+  &__container {
+    display: flex;
+    margin-top: -8vh;
+    margin-left: 3vw;
+    flex-wrap: wrap;
+    @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+      display: flex;
+      flex-direction: column;
+
+      align-items: center;
+    }
+    @media (min-width: 100px) and (max-width: $screen-phone-small) {
+      display: flex;
+      flex-direction: column;
+
+      align-items: center;
+    }
+  }
+}

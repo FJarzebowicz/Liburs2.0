@@ -1,0 +1,269 @@
+@media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+}
+
+@media (min-width: 100px) and (max-width: $screen-phone-small) {
+}
+@media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+}
+@media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) {
+}
+@media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) and (orientation: landscape) {
+}
+@media (min-width: $screen-desktop) {
+}
+@keyframes shake-lr {
+  0%,
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+  }
+  10% {
+    transform: rotate(8deg);
+  }
+  20%,
+  40%,
+  60% {
+    transform: rotate(-10deg);
+  }
+  30%,
+  50%,
+  70% {
+    transform: rotate(10deg);
+  }
+  80% {
+    transform: rotate(-8deg);
+  }
+  90% {
+    transform: rotate(8deg);
+  }
+}
+
+.AddCalendarEvent {
+  margin-top: 8vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  font-family: $third-font-family;
+  &-calendar {
+    margin-top: 5vh;
+  }
+
+  &__form {
+    margin-top: 8vh;
+    display: flex;
+    flex-direction: row;
+    @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+      flex-direction: column;
+    }
+    @media (min-width: 100px) and (max-width: $screen-phone-small) {
+      flex-direction: column;
+    }
+    @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+      flex-direction: column;
+    }
+
+    &-day {
+      margin-top: 8vh;
+    }
+    &-lesson {
+      margin-top: 4vh;
+      margin-right: 3vw;
+    }
+    &-type {
+      margin-top: 4vh;
+    }
+    &-description {
+      margin-left: 5vw;
+      @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+    }
+    &-inputs {
+      flex-direction: row;
+      display: flex;
+      @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+        flex-direction: row;
+        width: 95vw;
+      }
+      @media (min-width: 100px) and (max-width: $screen-phone-small) {
+        flex-direction: row;
+        width: 95vw;
+      }
+      @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+        flex-direction: row;
+        width: 90vw;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+      }
+      align-items: center;
+
+      width: 40vw;
+    }
+  }
+
+  &__select {
+    font-family: $third-font-family;
+    width: 25vw;
+    border-radius: 20px;
+
+    padding: 2vh 2vw;
+    border: none;
+    background-color: $color-gray-light-2;
+    font-size: 1.4rem;
+    @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+      width: 18rem;
+    }
+    @media (min-width: 100px) and (max-width: $screen-phone-small) {
+      width: 16rem;
+    }
+    @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+      width: 16rem;
+    }
+    @media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) {
+      width: 20rem;
+    }
+    @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+      width: 30rem;
+    }
+    &-teal {
+      background-color: $color-teal-1;
+    }
+    &-blue {
+      background-color: $color-blue-1;
+    }
+    &-pink {
+      background-color: $color-pink-1;
+    }
+    &-orange {
+      background-color: $color-orange-1;
+    }
+    &-red {
+      background-color: $color-red-1;
+    }
+    &-yellow {
+      background-color: $color-yellow-1;
+    }
+    &-small {
+      font-family: $third-font-family;
+      width: 8vw;
+      border-radius: 15px;
+      padding: 1vh 1vw;
+      border: none;
+
+      background-color: $color-gray-light-2;
+      font-size: 1.3rem;
+      &-teal {
+        background-color: $color-teal-1;
+      }
+      &-blue {
+        background-color: $color-blue-1;
+      }
+      &-pink {
+        background-color: $color-pink-1;
+      }
+      &-orange {
+        background-color: $color-orange-1;
+      }
+      &-red {
+        background-color: $color-red-1;
+      }
+      &-yellow {
+        background-color: $color-yellow-1;
+      }
+    }
+    &-medium {
+      font-family: $third-font-family;
+      width: 16vw;
+      border-radius: 15px;
+      padding: 1.6vh 1vw;
+      border: none;
+      background-color: $color-gray-light-2;
+      font-size: 1.3rem;
+      @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+        width: 9rem;
+      }
+      @media (min-width: 100px) and (max-width: $screen-phone-small) {
+        width: 8rem;
+      }
+      @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+        width: 10rem;
+      }
+      @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+        width: 14rem;
+        margin-right: 1rem;
+      }
+      &-teal {
+        background-color: $color-teal-1;
+      }
+      &-blue {
+        background-color: $color-blue-1;
+      }
+      &-pink {
+        background-color: $color-pink-1;
+      }
+      &-orange {
+        background-color: $color-orange-1;
+      }
+      &-red {
+        background-color: $color-red-1;
+      }
+      &-yellow {
+        background-color: $color-yellow-1;
+      }
+    }
+  }
+
+  &__input {
+    &-title {
+      background-color: transparent;
+      border: none;
+      border-bottom: 2px solid $color-gray-light-2;
+      width: 40vw;
+      outline: none;
+      font-family: $third-font-family;
+      font-size: 1.8rem;
+      @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+        width: 80vw;
+      }
+      @media (min-width: 100px) and (max-width: $screen-phone-small) {
+        width: 80vw;
+      }
+      @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+        width: 80vw;
+      }
+    }
+    &-description {
+      background-color: $color-gray-light-2;
+      outline: none;
+      border: none;
+      min-width: 40vw;
+      font-family: $third-font-family;
+      font-size: 1.3rem;
+      max-width: 40vw;
+      max-height: 60vh;
+      min-height: 60vh;
+      border-radius: 15px;
+      padding: 2vh 2vw;
+      @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+        max-width: 18rem;
+        min-width: 18rem;
+      }
+      @media (min-width: 100px) and (max-width: $screen-phone-small) {
+        max-width: 16rem;
+        min-width: 16rem;
+      }
+      @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+        max-width: 30rem;
+        min-width: 30rem;
+        margin-left: -2rem;
+      }
+    }
+  }
+}
+
+::placeholder {
+  color: black;
+  opacity: 70%;
+}

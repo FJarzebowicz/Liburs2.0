@@ -1,0 +1,62 @@
+@media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+}
+
+@media (min-width: 100px) and (max-width: $screen-phone-small) {
+}
+@media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+}
+@media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) {
+}
+@media (min-width: $screen-tablet) and (max-width: $screen-tablet-big) and (orientation: landscape) {
+}
+@media (min-width: $screen-desktop) {
+}
+
+.luckyNumber {
+  &__container {
+    width: 30vw;
+    @media (min-width: $screen-phone-small) and (max-width: $screen-phone) {
+      width: 20rem;
+    }
+    @media (min-width: 100px) and (max-width: $screen-phone-small) {
+      width: 18rem;
+    }
+    @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+      width: 35vw;
+    }
+    display: flex;
+    height: 20vh;
+    margin-left: 10vw;
+    margin-top: 10vh;
+    // background-image: linear-gradient(
+    //   to right bottom,
+    //   rgba($color-orange-1, 0.8),
+    //   rgba($color-orange-4, 0.8)
+    // );
+    background-color: $color-yellow-1;
+    border-radius: 25px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+
+    @media (min-width: $screen-phone) and (max-width: $screen-tablet) {
+    }
+  }
+  &__container:hover {
+    scale: 1.02;
+  }
+
+  &__text {
+    font-family: $defult-font-family;
+    font-size: $default-font-size;
+    margin-left: 2vw;
+  }
+
+  &__number {
+    font-size: 4.5rem;
+    font-family: $third-font-family;
+    margin-left: 3vw;
+  }
+}
