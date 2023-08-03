@@ -2,6 +2,17 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Live demo
+https://liburs2-0.vercel.app/
+
+# Teacher pass
+email: teacher@gmail.com
+password: 12345678
+
+# Student pass
+email: student@gmail.com
+password: 12345678
+
 ## Available Scripts
 
 In the project directory, you can run:
